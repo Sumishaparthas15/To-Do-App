@@ -1,0 +1,65 @@
+.todo_conatiner{
+    background-color: #000000;
+    width: 80vw;
+    margin: 5em auto;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+
+}
+.header{
+    font-size: 2em;
+    text-align: center;
+
+}
+.input_container{
+    display: flex;
+    background-color: #000000;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 2px solid rgb(224, 147, 3);
+}
+.input{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: 1 px;
+    border-radius: 1em;
+    padding: -10em;
+    margin: 1em;
+    width: 90%;
+    
+}
+.addButton{
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin: 1em;
+    padding: 0px 15px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(224, 147, 3);
+}
+.list_tasks{
+    font-size: 1.25em;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(224, 147, 3);
+    background-color: black;
+    border: 1px solid rgb(224, 147, 3);
+    border-radius: 5px;
+    padding: 0.5em;
+    margin:0.5em;
+
+}
+.delete_button{
+    border-radius: 5px;
+    margin: 0px 5px;
+    padding: 3px 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    float: right;
+    background-color:rgb(224, 147, 3);
+}
