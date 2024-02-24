@@ -53,6 +53,16 @@
     margin:0.5em;
 
 }
+.edit_button{
+    border-radius: 5px;
+   margin: 0px 5px;
+   padding: 3px 5px;
+   border: none;
+   cursor: pointer;
+   color: black;
+   float: right;
+   background-color:rgb(224, 147, 3);
+}
 .delete_button{
     border-radius: 5px;
     margin: 0px 5px;
@@ -63,3 +73,28 @@
     float: right;
     background-color:rgb(224, 147, 3);
 }
+.save_button{
+    border-radius: 5px;
+    margin: 0px 5px;
+    padding: 3px 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    
+    background-color:rgb(224, 147, 3);
+}
+.mark_as_done_button{
+    border-radius: 5px;
+    margin: 0px 5px;
+    padding: 3px 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    float: right;
+    background-color:rgb(224, 147, 3);
+}
+.completed {
+    text-decoration: line-through;
+    filter: blur(2px); 
+  }
+  

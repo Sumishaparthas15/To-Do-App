@@ -4,17 +4,22 @@ import ListTask from './ListTask';
 import AddTask from './AddTask';
 
 
+
 const ToDo = () => {
   const[tasks,setTask] = useState([]);
 
-  useEffect(()=>{
-    document.title =`you have ${tasks.length} pending task(s)`
-  })
+  // useEffect(()=>{
+  //   document.title =`you have ${tasks.length} pending task(s)`
+  // })
 
-  const addTask =(title) =>{
-    const newTask = [...tasks,{title}]
+  const addTask = (title) => {
+  const trimmedTitle = title.trim();
+  if (trimmedTitle && !tasks.some(task => task.title === trimmedTitle)) {
+    const newTask = [...tasks, { title: trimmedTitle }];
     setTask(newTask);
   }
+};
+
 
   const removeTask =(index)=>{
     const newTask = [...tasks]
@@ -28,14 +33,18 @@ const ToDo = () => {
                 <div className='header'>To-Do</div>
                 <div className='add_task'><AddTask addTask={addTask} />
                 </div>
+                
                 <div className='task_list'> 
                 {tasks.map((task,index) =>(
-                  <ListTask task ={task}   removeTask={removeTask}  index ={index} key={index}/>
+                  <ListTask task ={task}   removeTask={removeTask}  index ={index} key={index} tasks={tasks}/>
                  
 
 
                 ))}
                 
+                </div>
+                <div>
+                  
                 </div>
           </div>
        
